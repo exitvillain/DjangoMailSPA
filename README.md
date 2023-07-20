@@ -10,7 +10,7 @@ This is a single page application. Meaning there is one page of javascript that 
 document.addEventListener('DOMContentLoaded', function() {
 
   // Use buttons to toggle between views
-    console.log('hello asshole')
+
     document.querySelector('#inbox').addEventListener('click', () => load_mailbox('inbox'));
     document.querySelector('#sent').addEventListener('click', () => load_mailbox('sent'));
     document.querySelector('#archived').addEventListener('click', () => load_mailbox('archive'));
