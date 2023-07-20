@@ -1,7 +1,9 @@
 # fun_mail
 Written primarily in Javascript. a front-end for an email client that makes API calls to send and receive emails. This is a single page application that uses client side javascript code to fetch different content dynamically from a backend django server
 
-This is a single page application. Meaning there is one page of javascript that does all the magic.  Since the javascript file is nested within a few folders, I will paste it again below:
+This is a single page application. Meaning there is one page of javascript that does all the magic.  Since the javascript file in question is nested within a few folders in the larger django app, I will paste it again below. So basically this javascript is making API calls to the Django web app which is communicating with a sqlite database to store the emails and user information.
+
+![Alt text](snap_fun_mail(
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -63,7 +65,7 @@ function compose_email(replying_to_this_email) {
 } 
 
 
-// THERE TYPES OF MAILBOXES>   INBOX, SENT, ARCHIVy 
+// THREE TYPES OF MAILBOXES>   INBOX, SENT, ARCHIVE 
 function load_mailbox(mailbox) {
     
     // Show the mailbox and hide other views
@@ -84,11 +86,10 @@ function load_mailbox(mailbox) {
                  //if email.unread if false, make div white. actually the reverse
                  let element = document.createElement('div');
                  element.innerHTML = `${email.sender} ${email.subject} ${email.timestamp}`//probably want to change the sender for the sent mailbox but keep this for now
-                 //element.style.border = '1px solid black'; 
+                
                  element.style.border = `3px solid ${colors[index % colors.length]}`;
                  //element.style.marginBottom = '1px';
-                 // we want to make the row appear white if the email is not read, so since default is white, i wont do anything for this case
-                 // we want to make the row appear grey if the email has "read" field of true. So the following code is my attempt at implementing that
+                
                  if (email.read){ // here i am trying to check if email.read is false, but since i am new to javascript not sure if this is correct
                      element.style.background = 'grey' 
                  }else {
