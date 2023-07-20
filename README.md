@@ -3,7 +3,7 @@ Written primarily in Javascript. a front-end for an email client that makes API 
 
 This is a single page application. Meaning there is one page of javascript that does all the magic.  Since the javascript file in question is nested within a few folders in the larger django app, I will paste it again below. So basically this javascript is making API calls to the Django web app which is communicating with a sqlite database to store the emails and user information.
 
-![Alt text](snap_fun_mail)
+![Alt text](snap_fun_mail.png)
 
 document.addEventListener('DOMContentLoaded', function() {
 
