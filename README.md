@@ -1,5 +1,5 @@
 # fun_mail
-This is my second to last project for the Harvard Web Development Class CS50web.  Some starter code was provided to me including the entire django backend. 
+This is my second to last project for the Harvard Web Development Class cs50web  Some starter code was provided to me including the entire django backend. 
 
 The interesting part of this application is the inbox.js file. A front-end for an email client that makes API calls to send and receive emails. This is a single page application that uses client side javascript code to fetch different content dynamically from a backend django server
 
