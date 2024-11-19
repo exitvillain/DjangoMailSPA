@@ -1,4 +1,4 @@
-# DjangoMailSPA
+## DjangoMailSPA
 
 This is my second to last project for the Harvard Web Development Class cs50web  Some starter code was provided to me including the entire django backend. 
 
@@ -10,7 +10,7 @@ This is a single page application. Meaning there is one page of javascript that 
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Use buttons to toggle between views
+  ## Use buttons to toggle between views
 
     document.querySelector('#inbox').addEventListener('click', () => load_mailbox('inbox'));
     document.querySelector('#sent').addEventListener('click', () => load_mailbox('sent'));
@@ -68,7 +68,7 @@ function compose_email(replying_to_this_email) {
 } 
 
 
-// THREE TYPES OF MAILBOXES>   INBOX, SENT, ARCHIVE 
+## THREE TYPES OF MAILBOXES:   INBOX, SENT, ARCHIVE 
 function load_mailbox(mailbox) {
     
     // Show the mailbox and hide other views
